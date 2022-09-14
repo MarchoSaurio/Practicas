@@ -2,28 +2,14 @@ package ejerciciodeclase;
 
 public class EjercioDeClase {
 
-    public int problema1(long a) {
-        int digitoMenor = 9;
-        while (a > 0) {
-            int c = (int) (a % 10);
-            if (c < digitoMenor) {
-                digitoMenor = c;
-            }
-            a = a / 10;
-        }
-        return digitoMenor;
+   public int problema1(long a) {
+      return (int) (a%10);
     }
 
-    public long problema2(long a) {
-        int digitoMayor = 0;
-        while (a > 0) {
-            int b = (int) (a % 10);
-            if (b > digitoMayor) {
-                digitoMayor = b;
-            }
-            a = a / 10;
-        }
-        return digitoMayor;
+    public char problema2(long a) {
+        int digitoMayor = 0;  
+        String b = String.valueOf(a);    
+        return b.charAt(0);
     }
 
     public int problema3(long a, int b) {
