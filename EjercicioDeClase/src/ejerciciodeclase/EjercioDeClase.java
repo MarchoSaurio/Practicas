@@ -6,10 +6,14 @@ public class EjercioDeClase {
       return (int) (a%10);
     }
 
-    public char problema2(long a) {
-        int digitoMayor = 0;  
-        String b = String.valueOf(a);    
-        return b.charAt(0);
+    public int problema2(long a) {
+        int contador=0;
+        long c=a;
+        while (c>0){
+            contador++;
+            c=c/10;
+        }
+        return (int) (a/Math.pow(10, contador-1));
     }
 
     public int problema3(long a, int b) {
