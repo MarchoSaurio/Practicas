@@ -92,7 +92,7 @@ public class Hash {
         agregaMaestro(m);
         imprimeTabla();
         
-       // System.out.println(buscaMaestro(1234));
+       System.out.println(buscaMaestro(1234));
 
     }
 
